@@ -1,0 +1,19 @@
+# Dependency directories
+node_modules/
+/frontend/node_modules/
+
+# Next.js build output
+/frontend/.next/
+/frontend/out/
+
+# Database
+portfolio.db
+
+# OS files
+.DS_Store
+
+# Local env files
+.env*.local
+
+# Avoid README
+README.md

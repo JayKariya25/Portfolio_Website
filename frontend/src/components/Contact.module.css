@@ -1,0 +1,71 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.tilesGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.tile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 30px 40px;
+  text-align: left;
+  text-decoration: none;
+  gap: 24px;
+  width: 100%;
+}
+
+.tileContent {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.iconContainer {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--primary-light);
+  color: var(--primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+  transition: transform 0.3s ease;
+}
+
+.tile:hover .iconContainer {
+  transform: scale(1.1);
+}
+
+.iconContainer svg {
+  width: 26px;
+  height: 26px;
+}
+
+.tile h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.link {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  transition: color 0.2s ease;
+}
+
+.tile:hover .link {
+  color: var(--primary);
+}
